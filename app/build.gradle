@@ -2,15 +2,14 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 33
-    buildToolsVersion "30.0.2"
+    compileSdkVersion 34
     buildFeatures {
         viewBinding true
     }
     defaultConfig {
         applicationId "com.payfort.forttestapp"
-        minSdkVersion 16
-        targetSdkVersion 33
+        minSdkVersion 21
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
 
@@ -44,6 +43,7 @@ dependencies {
         }
     }
     implementation "com.google.code.gson:gson:$gson_version"
+    implementation 'androidx.multidex:multidex:2.0.1'
 
 
     testImplementation 'junit:junit:4.12'
